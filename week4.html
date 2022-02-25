@@ -117,7 +117,8 @@
         <div class="modal-content border-0">
           <div class="modal-header bg-dark text-white">
             <h5 id="productModalLabel" class="modal-title">
-              <span>新增產品</span>
+              <span v-if="isadd">新增產品</span>
+              <span v-else>編輯商品</span>
             </h5>
             <button
               type="button"
