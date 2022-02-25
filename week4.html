@@ -78,7 +78,11 @@
         aria-labelledby="productModalLabel"
         aria-hidden="true"
       >
-        <product-modal :temp="temp" @get-products="getData"></product-modal>
+        <product-modal
+          :temp="temp"
+          :isadd="isadd"
+          @get-products="getData"
+        ></product-modal>
       </div>
       <!-- Modal add/update end -->
       <!-- Modal delete -->
